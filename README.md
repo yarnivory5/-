@@ -1,31 +1,19 @@
-# 邓希杰的个人网站 — 完整备份
+# 邓希杰 · 个人宇宙完整备份
 
-在线网站：https://deng-xijie-personal-1109.ripejade2.chatgpt.site
+公开网站：https://deng-xijie-personal-1109.ripejade2.chatgpt.site
 
-## 文件结构
+根目录为可直接部署的静态网页；`website/` 为完整项目源码。修改 `website/site.html`、`website/app/globals.css`、`website/public/galaxy.js` 后，在 `website/` 运行 `node scripts/make-static.cjs`，输出在 `website/dist/`。当前静态构建无需安装依赖。
 
-- 根目录 `index.html`、`style.css`、`galaxy.js`、`moments/` 等：可直接部署的当前网站。
-- `website/`：完整项目源码，包括 HTML、CSS、JavaScript、构建脚本、配置和原有框架文件。
-- `website/public/`：网站使用的照片、视频封面与 34 秒自我介绍视频。
+## 当前版本
 
-## 修改及恢复
+2026-11-10：姓名首页、星云环绕导航和连续转场；五个章节（关于我、奔跑、笔墨、生活、听我说）；五张跑步照片、六张生活照片、两段站内书法视频和34秒自我介绍视频。
 
-当前网页以 `website/site.html` 为内容源，样式在 `website/app/globals.css`，交互在 `website/public/galaxy.js`。
+## 完整素材
 
-安装 Node.js 后，在 `website` 目录运行：
+`website/public/life/`：旅行与生活照片，以及两段本地书法视频。
+`website/public/moments/`：跑步奖牌与赛场照片。
+`website/public/intro.mp4`：个人介绍视频。
 
-```sh
-node scripts/make-static.cjs
-```
+以上网页使用的媒体均已保存到仓库，不依赖 D 盘或飞书登录即可展示。飞书原链接仍作为来源保留。照片和部分视频是为网页加载优化后的版本。
 
-生成的 `website/dist/` 包含完整静态网站，可交给静态托管服务。当前静态构建不需要安装项目依赖。根目录是这次备份时生成的发布文件副本。
-
-## 素材范围
-
-已保存：个人介绍视频、肖像和视频封面、五张跑步照片、两张书法视频封面。
-两段书法练习视频原文件仍托管在飞书；仓库保存对应链接和封面，没有声称已备份视频原文件。飞书链接可能需要登录。
-
-不包含依赖安装目录、本机缓存、登录凭据或 SSH 私钥。Git 提交保存每次备份版本；建议同时保留独立的本地备份包。
-
-备份更新日期：2026-11-10。
-
+不包含依赖安装目录、本机缓存或 SSH 私钥。Git 历史保留各次备份版本，同时建议保留独立 ZIP 备份。
