@@ -1,21 +1,30 @@
-# 邓希杰 · 奔跑与笔墨
+# 邓希杰的个人网站 — 完整备份
 
-个人网站，包含个人介绍、马拉松与书法爱好，以及自我介绍视频。
+在线网站：https://deng-xijie-personal-1109.ripejade2.chatgpt.site
 
-## 本地预览
+## 文件结构
 
-直接用浏览器打开 `index.html`，无需安装依赖。
+- 根目录 `index.html`、`style.css`、`galaxy.js`、`moments/` 等：可直接部署的当前网站。
+- `website/`：完整项目源码，包括 HTML、CSS、JavaScript、构建脚本、配置和原有框架文件。
+- `website/public/`：网站使用的照片、视频封面与 34 秒自我介绍视频。
 
-## 修改内容
+## 修改及恢复
 
-- `index.html`：页面内容与视频播放交互。
-- `style.css`：桌面和手机布局。
-- `portrait.jpg`：个人照片（源自用户提供的视频）。
-- `intro.mp4`：压缩后的自我介绍视频。
-- `favicon.svg`：网站图标。
+当前网页以 `website/site.html` 为内容源，样式在 `website/app/globals.css`，交互在 `website/public/galaxy.js`。
 
-## GitHub Pages
+安装 Node.js 后，在 `website` 目录运行：
 
-如果需要公开网站，可在仓库 Settings → Pages 中选择 Deploy from a branch，分支 `main`、目录 `/ (root)`。可用性取决于仓库可见性与 GitHub 套餐。上传仓库本身不会自动启用 Pages。
+```sh
+node scripts/make-static.cjs
+```
 
-网站使用相对资源路径，可放在域名根目录或项目子目录。
+生成的 `website/dist/` 包含完整静态网站，可交给静态托管服务。当前静态构建不需要安装项目依赖。根目录是这次备份时生成的发布文件副本。
+
+## 素材范围
+
+已保存：个人介绍视频、肖像和视频封面、四张跑步照片、两张书法视频封面。
+两段书法练习视频原文件仍托管在飞书；仓库保存对应链接和封面，没有声称已备份视频原文件。飞书链接可能需要登录。
+
+不包含依赖安装目录、本机缓存、登录凭据或 SSH 私钥。Git 提交保存每次备份版本；建议同时保留独立的本地备份包。
+
+备份更新日期：2026-11-10。
