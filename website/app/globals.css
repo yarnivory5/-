@@ -47,3 +47,10 @@ html{scroll-padding-top:90px}body{overflow-x:hidden}.site-header{position:fixed;
 /* The explicitly enabled motion mode also governs manual gallery transitions. */
 body:not(.pointer-paused) .photo-cylinder{transition-duration:1.4s,.55s!important}body:not(.pointer-paused) .cylinder-photo{transition-duration:1.1s!important}body .photo-cylinder.instant{transition-duration:0s!important}
 
+
+/* Closing chapter: quiet typography over a brief, silent firework canvas. */
+.ending-view{position:relative;isolation:isolate;overflow:clip;min-height:100svh;text-align:center;background:radial-gradient(ellipse at center,#15152b55,transparent 72%)}#ending-fireworks{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:-1;opacity:.75}.ending-view .chapter-layout{display:block}.ending-view .chapter-copy{max-width:760px;margin:auto}.ending-view .chapter-copy h2{font-size:clamp(52px,6vw,88px);line-height:1.3}.ending-view .chapter-lead{margin:28px auto 22px}.ending-view .chapter-description,.ending-note{max-width:630px;margin:18px auto;font-size:14px;line-height:2.2;color:#b6bfd2;text-wrap:pretty}.ending-view .chapter-copy>.text-link{display:none}.ending-view .eyebrow{color:#a3afc8}.ending-view .next-chapter{position:relative;z-index:1;margin-top:32px}.fireworks-replay{font-size:11px;letter-spacing:1px;color:#b7bfdd;border-bottom:1px solid #9daecc55;padding:12px 2px;margin-top:14px}.fireworks-replay:hover{color:white}
+@media(max-width:650px){.ending-view{padding:70px 7vw 35px}.ending-view .chapter-copy h2{font-size:48px}.ending-view .chapter-description,.ending-note{font-size:12px;line-height:2.1}.ending-view .chapter-lead{font-size:16px;line-height:1.8}.ending-view .next-chapter{margin-top:24px}#ending-fireworks{opacity:.55}}
+
+@media(min-width:651px){.ending-view{min-height:calc(100svh - 80px);padding:48px 8vw 28px}.ending-view .chapter-copy h2{font-size:clamp(50px,5.2vw,72px);margin:14px 0}.ending-view .chapter-lead{margin:18px auto}.ending-view .chapter-description,.ending-note{margin:14px auto;line-height:2}.ending-view .next-chapter{margin-top:18px}.ending-view .fireworks-replay{margin-top:6px}}
+
